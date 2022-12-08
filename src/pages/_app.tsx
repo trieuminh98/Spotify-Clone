@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import { theme } from '../configs/theme';
-import '../styles/globals.css';
+import '../styles/dist.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
 }
 
 const Wrapper = ({ children }: any) => {
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
 
   return <>{children}</>;
 };
