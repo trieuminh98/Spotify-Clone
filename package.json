@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev --turbo\" \"tailwindcss -i styles/globals.css -o styles/dist.css -w\"",
+    "dev": "concurrently \"next dev\" \"tailwindcss -i src/styles/globals.css -o src/styles/dist.css -w\"",
     "build": "tailwindcss -m -i src/styles/globals.css -o src/styles/dist.css && next build",
     "start": "next start",
     "lint": "next lint"
@@ -19,8 +19,10 @@
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "next": "13.0.5",
+    "postcss": "^8.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.56.1",
     "typescript": "4.9.3"
   },
   "devDependencies": {
