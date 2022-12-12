@@ -1,6 +1,15 @@
-.sider {
+.logo {
   height: 40px;
   max-width: 131px;
   width: 100%;
   color: #fff;
+}
+
+.menu {
+  :global(.ant-menu-title-content) {
+    padding-left: 10px;
+  }
+  :global(.ant-menu-item-selected) {
+    background-color: #000 !important;
+  }
 }
