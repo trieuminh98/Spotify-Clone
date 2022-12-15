@@ -1,0 +1,37 @@
+.header {
+  color: white;
+}
+
+.top-bar-right {
+  background-color: transparent;
+  color: #a7a7a7;
+  button {
+    background-color: #fff;
+  }
+  div {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    &:hover {
+      transform: scale(1.04);
+      a {
+        color: #fff;
+      }
+    }
+    &:last-child {
+      button {
+        background-color: #f6f6f6;
+      }
+      a {
+        color: #333;
+      }
+    }
+  }
+}
+
+.stick {
+  background: #fff;
+  height: 25px;
+  margin: 16px;
+  width: 1px;
+}

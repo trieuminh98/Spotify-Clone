@@ -1,7 +1,6 @@
 import { Layout, theme } from 'antd';
 import { JSXElement } from 'commons/interfaces/common';
-import { Menu } from 'components';
-import { Header, Sider } from 'fragments';
+import { Footer, Header, Sider } from 'fragments';
 
 type ContainerProps = {
   children?: JSXElement;
@@ -18,7 +17,7 @@ const Container = (props: ContainerProps) => {
   return (
     <>
       <Layout>
-        <Layout.Sider width={'15%'} style={{ background: colorBgContainer }}>
+        <Layout.Sider width={'18%'} style={{ background: colorBgContainer }}>
           <Sider />
         </Layout.Sider>
         <Layout>
@@ -36,6 +35,9 @@ const Container = (props: ContainerProps) => {
             {children}
           </Layout.Content>
         </Layout>
+        <Layout.Footer style={{ background: 'linear-gradient(90deg, #af2896, #509bf5)', paddingLeft: 15 }} className='bottom-0 p-0 fixed w-full'>
+          <Footer />
+        </Layout.Footer>
       </Layout>
     </>
   );

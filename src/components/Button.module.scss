@@ -1,0 +1,9 @@
+.login-btn {
+  background-color: #fff;
+  div {
+    &:hover {
+      transform: scale(1.04);
+      background-color: #f6f6f6;
+    }
+  }
+}
