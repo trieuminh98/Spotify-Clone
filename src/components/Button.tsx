@@ -10,7 +10,7 @@ type ButtonProps = AButtonProps & {
 };
 
 const Button = (props: ButtonProps) => {
-  const { tooltipText = '', className = {}, isLoginStyle = false } = props;
+  const { tooltipText = '', className = '', isLoginStyle = false, ...restProps } = props;
   const newClassName = className + '' + (isLoginStyle ? '' : '');
   const addTooltip = (children: JSXElement) => {
     if (tooltipText) {
@@ -21,7 +21,7 @@ const Button = (props: ButtonProps) => {
 
   const addConfig = compose(addTooltip);
 
-  return addConfig(<AButton className={`${className}`} {...props} />);
+  return addConfig(<AButton className={`${className}`} {...restProps} />);
 };
 
 export default Button;

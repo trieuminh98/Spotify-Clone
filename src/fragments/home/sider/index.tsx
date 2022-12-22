@@ -53,7 +53,7 @@ const Sider = (_props: SiderProps) => {
     };
   });
 
-  const onClick: MenuProps['onClick'] = (e) => {
+  const onClick: MenuProps['onClick'] = (e: any) => {
     console.log(e.key);
     setCurrent(e.key);
   };
@@ -77,7 +77,7 @@ const Sider = (_props: SiderProps) => {
               items={items2}
             />
           </Col>
-          <Row mL20 class={styles['sider-footer']}>
+          <Row mL20 className={styles['sider-footer']}>
             <Col pT10 span={24}>
               <Link onClick={() => window.open('https://www.spotify.com/vn-vi/legal/cookies-policy/', '_blank')} href={''}>
                 Cookies

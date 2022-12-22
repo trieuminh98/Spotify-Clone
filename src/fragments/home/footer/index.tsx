@@ -18,11 +18,11 @@ const Fotter = (_props: FotterProps) => {
             </Row>
           </Col>
           <Col>
-            <Button isLoginStyle className='rounded-3xl h-12 w-24'>
+            {/* <Button isLoginStyle className='rounded-3xl h-12 w-24'>
               <Link className='font-bold' href={'/'}>
                 Log in
               </Link>
-            </Button>
+            </Button> */}
           </Col>
         </Row>
       </Link>

@@ -7,3 +7,12 @@ export const COLORS = {
   purple: '#914AFF',
   orange: '#FE5F4B',
 };
+
+export type MethodType = 'get' | 'post' | 'put' | 'delete';
+
+export const METHOD_TYPES = {
+  GET: 'get' as MethodType,
+  POST: 'post' as MethodType,
+  PUT: 'put' as MethodType,
+  DELETE: 'delete' as MethodType,
+};
